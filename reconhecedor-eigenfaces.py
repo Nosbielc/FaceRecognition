@@ -1,6 +1,6 @@
 import cv2
 
-detectorFace = cv2.CascadeClassifier("haarcascade/haarcascade_frontalface_default.xml")
+detectorFace = cv2.CascadeClassifier("haarcascade/haarcascade-frontalface-default.xml")
 reconhecedor = cv2.face.EigenFaceRecognizer_create()
 reconhecedor.read("treinamentos/classificadorEigen.yml")
 largura, altura = 220, 220
